@@ -73,22 +73,27 @@ Thus the program to read A values and check whether A is positive number or not 
 
 # EX-03- Operators-Expressions
 ## AIM:
-Write a program to find minimum between two fraction numbers using conditional operator or ternary operator.
+Write a C program to find minimum between two given integer values(For ex: a=100 b=1200) using conditional operator or ternary operator.
+
+
 
 ## ALGORITHM:
-1.	Declare variables to store the two fraction numbers and the result.
-2.	Use the printf function to prompt the user to enter the first fraction number (numerator and denominator separately).
-3.	Use the scanf function to read the numerator and denominator of the first fraction.
-4.	Repeat steps 2 and 3 to get the second fraction from the user.
-5.	Calculate the decimal values of both fractions by dividing the numerators by the denominators.
-6.	Use the conditional (ternary) operator to compare the decimal values and store the minimum value in the result variable.
-7.	Print the minimum value.
+1.Start the program.
+
+2.Declare two integer variables a and b.
+
+3.Read the values of a and b from the user.
+
+4.Use the conditional (ternary) operator ? : to find the minimum value.
+
+5.Display the minimum value as output.
 
 ## PROGRAM:
+![alt text](m1d3.png)
 
 ## OUTPUT:
 
-
+![alt text](<m1d3 (2).png>)
 
 
 
@@ -105,20 +110,25 @@ Thus the program to find minimum between two fraction numbers using conditional 
 # EX-04- Using Conditional Statements
 
 ## AIM:
-Write a C program to check whether the input value is equal to 1 using simple if statement
+Write a C program to read a number and check whether the number is divisible by 5 or not using  if else
 
 ## ALGORITHM:
-1.	Declare a variable to store the input value.
-2.	Use the scanf function to read the input value from the user.
-3.	Use an if statement to check if the input value is equal to 1.
-4.	If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
-5.	Otherwise, print a message indicating that it's not equal to 1.
-6.	End the program.
+1.Start the program.
+
+2.Declare an integer variable num.
+
+3.Read the value of num from the user.
+
+4.Check if num is divisible by 5 using the condition num % 5 == 0.
+
+5.If the condition is true, display “Number is divisible by 5”.
+
+6.Otherwise, display “Number is not divisible by 5”.
 
 ## PROGRAM:
-
+![alt text](m1d4.png)
 ## OUTPUT:
-
+![alt text](m1d4-2.png)
 
 
 
@@ -136,25 +146,30 @@ Thus the program to check whether the input value is equal to 1 using simple if 
 
 # EX-05- Calculating Total, Percentage, And Division Using Conditional Statements 
 ## AIM:
-To write a C program that reads marks of three subjects, calculates the total and percentage, and then determines the division (First, Second, Pass, or Fail) based on the percentage and minimum marks criteria.
+Write a C program to calculate total, average and percentage of five subjects. 
 ## ALGORITHM:
-1.	Start
-2.	Declare integer variables m1, m2, m3 for marks, and float variables tot, per.
-3.	Input the marks for three subjects.
-4.	Calculate total marks: tot = m1 + m2 + m3
-5.	Calculate percentage: per = tot / 3
-6.	Display total and percentage.
-7.	Check if all marks are greater than or equal to 40:
-8.	If yes:
-a.	If percentage >= 60: Print “Division = First”
-b.	Else if percentage >= 48: Print “Division = Second”
-c.	Else if percentage >= 36: Print “Division = Pass”
-9.	Else: Print “Division = Fail”
-10.	End
+1.	Start the program.
+
+2. Declare five float variables — en, mat, ph, chem, and tam — to store marks of 5 subjects.
+
+3. Read the marks of all five subjects from the user using scanf().
+
+4. Declare three float variables — total, avg, and per.
+
+5. Calculate the total marks using the formula
+total = en + mat + ph + chem + tam.
+
+6. Calculate the average marks using the formula
+avg = total / 5.
+
+7. Assign percentage as equal to average:
+per = avg.
+
+8. Display the total, average, and percentage using printf().
 ## PROGRAM:
-
+![alt text](m1d5.png)
 ## OUTPUT:
-
+![alt text](<m1d5 (2).png>)
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
 
