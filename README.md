@@ -5,8 +5,11 @@ Write a C program to read a float value from the user and display the same value
 
 ## ALGORITHM:
 1.Start the program.
+
 2.Declare a variable of type float.
+
 3.Read a float value from the user using scanf().
+
 4.Display the entered float value using printf().
 
 ## PROGRAM:
