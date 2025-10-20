@@ -1,13 +1,13 @@
 
 # EX-01-Datatypes-Operators
 ## AIM:
-Write a C program to read 3 characters one by one and print the characters in a reverse order.
+Write a C program to read a float value from the user and display the same value as an output.
 
 ## ALGORITHM:
-1.	Declare three character variables to store the input characters.
-2.	Use the scanf function to read the characters one by one from the user.
-3.	Print the characters in reverse order using the printf function.
-4.	End the program.
+1.Start the program.
+2.Declare a variable of type float.
+3.Read a float value from the user using scanf().
+4.Display the entered float value using printf().
 
 ## PROGRAM:
 
