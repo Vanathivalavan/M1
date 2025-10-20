@@ -13,11 +13,11 @@ Write a C program to read a float value from the user and display the same value
 4.Display the entered float value using printf().
 
 ## PROGRAM:
-![alt text](<../Screenshot 2025-10-20 082257.png>)
+![alt text](<Screenshot 2025-10-20 082257.png>)
 
 ## OUTPUT:
+![alt text](<Screenshot 2025-10-20 082433.png>)
 
-![alt text](<../Screenshot 2025-10-20 082433.png>)
 
 
 
@@ -39,21 +39,22 @@ Thus the program to read 3 characters one by one and print the characters in a r
 
 # EX-02- Conditional-Statements
 ## AIM:
-Write a C program to read A values and check whether A is positive number or not.
+Write a C program to read  N value and check that value is equal to 0 or not using if-else
 
 # ALGORITHM:
-1.	Declare a variable to store the input value A.
-2.	Use the scanf function to read the value of A from the user.
-3.	Check if the value of A is greater than zero.
-4.	If A is greater than zero, print a message indicating that it's a positive number. 
-5.	Otherwise, print a message indicating that it's not a positive number.
-6.End the program.
+1.Start the program.
 
+2.Read an integer value N from the user.
+
+3.Check if N is equal to 0 using an if condition.
+
+4.If true, display “N is equal to 0”, else display “N is not equal to 0”.
 # PROGRAM:
+![alt text](<Screenshot 2025-10-20 083616.png>)
 
 # OUTPUT:
 
-
+![alt text](<Screenshot 2025-10-20 083623.png>)
 
 
 
