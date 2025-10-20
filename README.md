@@ -13,10 +13,11 @@ Write a C program to read a float value from the user and display the same value
 4.Display the entered float value using printf().
 
 ## PROGRAM:
+![alt text](<../Screenshot 2025-10-20 082257.png>)
 
 ## OUTPUT:
 
-
+![alt text](<../Screenshot 2025-10-20 082433.png>)
 
 
 
