@@ -1,4 +1,5 @@
-
+## Name: VANATHI T
+## Reg no.:25013590
 # EX-01-Datatypes-Operators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
@@ -10,24 +11,26 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+int main ()
+{
+    char a,b,c;
+
+    scanf("%c",&a);
+    
+    scanf("%c",&b);
+    
+    scanf ("%c",&c);
+    printf("The reverse of %c%c%c is %c%c%c",a,b,c,c,b,a);
+    return 0;
+}
+
+```
 
 ## OUTPUT:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![alt text](M1d1.png)
 
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
@@ -35,64 +38,88 @@ Thus the program to read 3 characters one by one and print the characters in a r
 
 # EX-02- Conditional-Statements
 ## AIM:
-Write a C program to read A values and check whether A is positive number or not.
+Write a C program to check whether a number is positive or negative using if-else
+
 
 # ALGORITHM:
-1.	Declare a variable to store the input value A.
-2.	Use the scanf function to read the value of A from the user.
-3.	Check if the value of A is greater than zero.
-4.	If A is greater than zero, print a message indicating that it's a positive number. 
-5.	Otherwise, print a message indicating that it's not a positive number.
-6.End the program.
+
+1. Declare an integer variable num.
+
+2. Read the value of num from the user using scanf().
+
+3. Check if num >= 0:
+
+4. If true, print "Number is positive."
+
+5. Otherwise, print "Number is negative."
 
 # PROGRAM:
+
+```
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    
+    if(num >=0)
+    {
+        
+        printf("Number is positive.");
+    }
+    else
+    {
+       
+        printf("Number is negative.");
+    }
+
+    return 0;
+}
+```
 
 # OUTPUT:
 
 
-
-
-
-
-
-
-
-
+![alt text](M1d2.png)
 
 # RESULT:
-Thus the program to read A values and check whether A is positive number or not has been executed successfully.
- 
+
+Thus, the program to read a value and check whether it is a positive number or not has been executed successfully. 
  
  
 
 
 # EX-03- Operators-Expressions
 ## AIM:
-Write a program to find minimum between two fraction numbers using conditional operator or ternary operator.
+Write a C program to find Minimum between two given integer values(a=-1000 b=-1500) using conditional operator( ternary operator).
 
 ## ALGORITHM:
-1.	Declare variables to store the two fraction numbers and the result.
-2.	Use the printf function to prompt the user to enter the first fraction number (numerator and denominator separately).
-3.	Use the scanf function to read the numerator and denominator of the first fraction.
-4.	Repeat steps 2 and 3 to get the second fraction from the user.
-5.	Calculate the decimal values of both fractions by dividing the numerators by the denominators.
-6.	Use the conditional (ternary) operator to compare the decimal values and store the minimum value in the result variable.
+1.	Declare variables to store the two integer numbers and the result.
+2.	Use the printf function to prompt the user to enter the first integer number .
+3.	Use the scanf function to read the first and second integer number.
+4.	Use the conditional (ternary) operator to compare two numbers and store the minimum value in the result variable.
 7.	Print the minimum value.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+int main(){
+    int a,b,min;
+    scanf("%d %d",&a,&b);
+    min = (a<b)? a:b;
+    printf("Minimum between %d and %d is %d",a,b,min);
+    return 0;
+}
+
+```
 
 ## OUTPUT:
 
-
-
-
-
-
-
-
+![alt text](M1d3.png)
 
 ## RESULT:
-Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
+Thus the program to find minimum between two given integer numbers using conditional operator or ternary operator has been executed successfully.
 
 
 
@@ -100,56 +127,90 @@ Thus the program to find minimum between two fraction numbers using conditional 
 # EX-04- Using Conditional Statements
 
 ## AIM:
-Write a C program to check whether the input value is equal to 1 using simple if statement
+Write a C program to read a, b value and check whether they are equal or not. using  if else
+
 
 ## ALGORITHM:
-1.	Declare a variable to store the input value.
-2.	Use the scanf function to read the input value from the user.
-3.	Use an if statement to check if the input value is equal to 1.
-4.	If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
-5.	Otherwise, print a message indicating that it's not equal to 1.
-6.	End the program.
+1. Start the program.
+
+2. Declare an integer variable num.
+
+3. Read the value of num from the user using scanf().
+
+4. If num >= 0, then print "Number is positive."
+
+5. Otherwise, print "Number is negative".
 
 ## PROGRAM:
+```
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a==b){
+        printf("Both the values are equal.");
+    }
+    else{
+        printf("Both the values are Not equal.");
+    }
+    return 0;
+}
 
+```
 ## OUTPUT:
 
 
-
-
-
-
-
-
-
-	
+![alt text](M1d4.png)
 
 ## RESULT:
-Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
-
+Thus, the program to read a value and check whether it is a positive number or not has been executed successfully.
 
 
 # EX-05- Calculating Total, Percentage, And Division Using Conditional Statements 
-## AIM:
-To write a C program that reads marks of three subjects, calculates the total and percentage, and then determines the division (First, Second, Pass, or Fail) based on the percentage and minimum marks criteria.
-## ALGORITHM:
-1.	Start
-2.	Declare integer variables m1, m2, m3 for marks, and float variables tot, per.
-3.	Input the marks for three subjects.
-4.	Calculate total marks: tot = m1 + m2 + m3
-5.	Calculate percentage: per = tot / 3
-6.	Display total and percentage.
-7.	Check if all marks are greater than or equal to 40:
-8.	If yes:
-a.	If percentage >= 60: Print “Division = First”
-b.	Else if percentage >= 48: Print “Division = Second”
-c.	Else if percentage >= 36: Print “Division = Pass”
-9.	Else: Print “Division = Fail”
-10.	End
-## PROGRAM:
+## AIM: 
+TO write a C program to calculate total, average and percentage of five subjects.
 
+## ALGORITHM:
+
+1.	Start the program.
+
+2. Declare five float variables — en, mat, ph, chem, and tam — to store marks of 5 subjects.
+
+3. Read the marks of all five subjects from the user using scanf().
+
+4. Declare three float variables — total, avg, and per.
+
+5. Calculate the total marks using the formula
+total = en + mat + ph + chem + tam.
+
+6. Calculate the average marks using the formula
+avg = total / 5.
+
+7. Assign percentage as equal to average:
+per = avg.
+
+8. Display the total, average, and percentage using printf().
+
+## PROGRAM:
+```
+#include <stdio.h>
+int main()
+{
+    float en,mat,ph,chem,tam;
+    scanf("%f%f%f%f%f",&en,&mat,&ph,&chem,&tam);
+    float total,avg,per;
+    total=en+mat+ph+chem+tam;
+    avg=total/5;
+    per=avg;
+    printf("Total marks = %.2f\n",total);
+    printf("Average marks = %.2f\n",avg);
+    printf("Percentage = %.2f",per);
+}
+```
 ## OUTPUT:
 
+![alt text](M1d5.jpg)
 ## RESULT:
-The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
+The program successfully takes five subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
 
